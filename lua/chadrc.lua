@@ -2,12 +2,13 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
+	theme = 'catppuccin',
+	telescope = {
+	  style = "bordered",
+	}
+  }
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
-}
+M.plugins = "plugins"
+M.mappings = require "mappings"
 
 return M
